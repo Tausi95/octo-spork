@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NBA Predictions</title>
+    <style>
+        .upload-area {
+            border: 2px dashed #aaa;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>NBA Predictor</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <div class="upload-area" onclick="document.getElementById('fileInput').click();">
+            <p>Drag & Drop or Click to Upload CSV</p>
+            <input type="file" name="file" id="fileInput" style="display: none;" />
+        </div>
+        <br>
+        <button type="submit">Upload & Predict</button>
+    </form>
+    {% if prediction %}
+    <h2>Predictions:</h2>
+    <ul>
+        {% for p in prediction %}
+        <li>{{ p }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>

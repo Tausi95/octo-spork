@@ -1,5 +1,82 @@
-venv/
+# Python
 __pycache__/
-*.pyc
-*.swp
+*.py[cod]
+*.so
+.Python
+venv/
+
+# Data
+data/
+*.csv
+*.pickle
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+*.env
+.env
+
+# Pytest and other test logs
+*.log
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# VS Code settings
+.vscode/
+
+# System files
 .DS_Store
+Thumbs.db
+
+# Pre-commit related
+.pre-commit-config.yaml
+.pre-commit-hooks.yaml
+
+# Machine Learning / Deep Learning files
+*.h5
+*.hdf5
+*.ckpt
+*.pb
+*.onnx
+*.tflite
+*.pkl
+*.joblib
+*.npz
+*.npy
+
+# Dataset and result folders
+data/
+datasets/
+outputs/
+checkpoints/
+runs/
+logs/
+
+# Git-specific
+.git/
+
+# Other common patterns
+build/
+dist/
+*.egg-info/
